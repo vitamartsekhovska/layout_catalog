@@ -1,7 +1,8 @@
 .main {
   display: grid;
-  gap: 46px 48px;
-  padding: 50px 40px;
+  row-gap: $row-gap;
+  grid-column-gap: $column-gap;
+  padding: $margin-height-padding-50 $margin-height-padding-40;
   justify-content: center;
 
   @include column-count;
@@ -20,7 +21,7 @@
     display: block;
     height: 134px;
     width: 160px;
-    margin: 32px 19px 40px;
+    margin: 32px 19px $margin-height-padding-40;
   }
 
   &__description {
@@ -28,7 +29,7 @@
   }
 
   &__title {
-    margin-bottom: $margin-4;
+    margin-bottom: $margin-height-4;
     color: $main-accent;
     font-size: 12px;
     font-weight: 500;
@@ -73,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: $margin-height-padding-40;
     width: 166px;
     border-radius: 5px;
     background-color: $blue-accent;
